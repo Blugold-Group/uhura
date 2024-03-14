@@ -6,6 +6,7 @@ Abilities:
     - [ ] Read text from an image with OCR
     - [ ] Read Braille from an image
     - [ ] Can interpret symbols in a code which aren't recognizable ASCII symbols 
+    - [ ] Can read a text and find the language 
     
 #### Symbol Interpreter
 
