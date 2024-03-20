@@ -3,12 +3,12 @@
 Translator is a tool which analyses an image and retrieves readable text in order to be used on a computer without a human having to copy all of the text by hand. 
 
 Abilities:
-    - [x] Read text from an image with OCR
-    - [ ] Read other ASCII symbols from an image
-      - [ ] Braille
-      - [ ] Morse
-    - [ ] Can interpret symbols in a code which aren't recognizable ASCII symbols 
-    - [x] Can read a text and find the language used
+- [x] Read text from an image with OCR
+- [ ] Read other ASCII symbols from an image
+    - [ ] Braille
+    - [ ] Morse
+- [ ] Can interpret symbols in a code which aren't recognizable ASCII symbols 
+- [x] Can read a text and find the language used
     
 #### Symbol Interpreter
 
