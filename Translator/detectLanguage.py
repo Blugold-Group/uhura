@@ -188,7 +188,7 @@ def detect_language(text):
     ('zu', 'Zulu'),]
 
 
-    detectlanguage.configuration.api_key = "fc81eaf22eb06d795183a147a072aeeb"
+    detectlanguage.configuration.api_key = ""
     detectlanguage.configuration.secure = True
 
     result=detectlanguage.detect(text)[0]
