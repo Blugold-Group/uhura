@@ -1,5 +1,6 @@
 import detectlanguage
 from langdetect import detect
+import passwords
 
 def detect_language(text):
     iso_639_choices = [('ab', 'Abkhaz'),
@@ -188,7 +189,7 @@ def detect_language(text):
     ('zu', 'Zulu'),]
 
 
-    detectlanguage.configuration.api_key = ""
+    detectlanguage.configuration.api_key = passwords.languageapi()
     detectlanguage.configuration.secure = True
 
     result=detectlanguage.detect(text)[0]
@@ -201,4 +202,3 @@ def detect_language(text):
 def detect_language_offline(text):
 
     return(detect(text))
-
