@@ -1,6 +1,6 @@
 # Uhura
 
-Uhura is a tool which analyses an image and retrieves readable text in order to be used on a computer without a human having to copy all of the text by hand. 
+Uhura is a universal translator, able to translate between languages, encodings, and formats, as well as translate physical forms into digital.
 
 Abilities:
 - [x] Read text from an image with OCR
@@ -8,13 +8,14 @@ Abilities:
   - [ ] Braille
   - [ ] Morse
   - [ ] Semaphore?
-- [ ] Can interpret symbols in a code which aren't recognizable ASCII symbols 
+- [ ] Can interpret symbols in a code which aren't recognizable ASCII symbols into a format for cryptanalysis 
 - [x] Can read a text and find the language used
-    
-#### Symbol Interpreter
+- [ ] Can translate between languages
 
-A tool which is fed an image of symbols, usually a code which is encrypted as symbols (not standard english letters or numbers)
+## Symbol Interpreter
 
-The operator marks the corners of each symbol, and using the marks the tool can determine which are shapes. 
+A tool which takes an image of physical symbols which aren't recognizable ascii characters (IE a message encrypted with the [Templar Cipher](https://www.dcode.fr/templars-cipher) on a piece of paper)
 
-It optionally grayscales the image so colors won't strew the results, but can preserve color in case the code uses color
+It uses a machine learning model to classify the synbols, but it assumes that the symbols haven't been seen before so it can't actually recognize them, it builds the model on the fly based on how the user classifies it
+
+Or now that I'm thinking about it, the user could just color in a bunch of the symbols, so on the paper they color symbol A as a red background and symbol B as a green, and the model is built of off classifying using the color. It could still build the model assuming that the user won't color in all of the symbols, or just assume that the user will fill in all of the symbols
